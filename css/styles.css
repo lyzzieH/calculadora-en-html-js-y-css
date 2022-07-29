@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+html{
+    font-family:'Saira', sans-serif ;
+    font-size: 62.5%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+.calculator { 
+display: flex;
+flex-direction: column;
+width: 500px;
+font-size: 2rem;
+border: 1px solid gray;
+
+}
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto;
+}
+.calculator-keypad{
+    display: block ;
+    width: auto;
+}
+.Keypad-numbers{
+    display: flex;
+   
+    flex-wrap: wrap;
+    width:auto;
+
+}
+.Keypad-button{
+    width: 22.5%;
+    padding: 15% 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 1px solid rgb(43, 44, 42);
+}
+
+.Keypad-button:hover{
+    filter: brightness(80%);
+    transition:filter .25s ;
+
+}
+.Keypad-button.yellow{
+    background-color:yellow;
+}
+.Keypad-button.azul{
+    background-color:rgba(107, 192, 241, 0.911);
+}
+.Keypad-button.large{
+    width: 55%;
+}
+
+.Keypad-button.dark{
+    background-color:lightgray;
+}
